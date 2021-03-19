@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 25px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 25px;
+    height: auto;
+  }
+}
+
+.container__left {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .container__left {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container__left {
+    text-align: center;
+  }
+}
+
+.container__left h1 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width: 375px) {
+  .container__left h1 {
+    font-size: 30px;
+  }
+}
+
+.container__left p {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container__left p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container__left p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}
+
+.container__right {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+}
+
+.container__right .top {
+  background-color: #6055a5;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  margin: 40px 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 0px rgba(102, 102, 102, 0.329);
+          box-shadow: 0px 6px 0px rgba(102, 102, 102, 0.329);
+}
+
+.container__right .top span {
+  color: #b9b6d3;
+}
+
+.container .form-card {
+  padding: 30px 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 0px rgba(102, 102, 102, 0.329);
+          box-shadow: 0px 6px 0px rgba(102, 102, 102, 0.329);
+}
+
+@media only screen and (max-width: 375px) {
+  .container .form-card {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .form-card {
+    margin-bottom: 40px;
+  }
+}
+
+.container .form-card form .label {
+  font-size: 10px;
+  color: #ff7a7a;
+  float: right;
+  font-style: italic;
+  margin: 5px 0 15px;
+}
+
+.container .form-card form div {
+  margin: 30px 0;
+}
+
+.container .form-card form .form-control {
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3e3c49;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+}
+
+.container .form-card form .form-control:focus {
+  outline-color: #6055a5 !important;
+}
+
+.container .form-card form .btn {
+  width: 100%;
+  height: 50px;
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px rgba(102, 102, 102, 0.267);
+          box-shadow: 0px 3px 0px rgba(102, 102, 102, 0.267);
+  cursor: pointer;
+}
+
+.container .form-card form .check {
+  color: #b9b6d3;
+  font-size: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #6055a5;
+}
+/*# sourceMappingURL=style.css.map */
